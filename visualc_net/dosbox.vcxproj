@@ -43,7 +43,7 @@
     <_ProjectFileVersion>16.0.29403.142</_ProjectFileVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>$(SolutionDir)Debug\</OutDir>
+    <OutDir>$(YUZA_ROOT)/Bin/</OutDir>
     <IntDir>$(SolutionDir)\Intermediate\$(ProjectName)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
     <TargetExt>.exe</TargetExt>
