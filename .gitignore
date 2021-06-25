@@ -50,3 +50,7 @@ android-project/build
 android-project/obj
 android-project/.gradle
 android-project/libs
+
+/visualc_net/Debug/
+/visualc_net/.vs/
+/visualc_net/Intermediate/

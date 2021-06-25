@@ -56,7 +56,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>./;../include;../../../../corelib/include;../../../../runtime/include;../../../../corelib/STL/SGI;../../../../ThirdParty/SDL/SDL2/SDL/include;./src/visualc;../src\platform\visualc;../../../../corelib/streams</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>./;../include;$(YUZA_ROOT)/corelib/include;$(YUZA_ROOT)/runtime/include;$(YUZA_ROOT)/corelib/STL/SGI;$(YUZA_ROOT)/ThirdParty/SDL/SDL2/SDL/include;./src/visualc;../src\platform\visualc;$(YUZA_ROOT)/corelib/streams</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>SDL;SKYOS32;_MSC_VER=1920;</PreprocessorDefinitions>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
@@ -89,7 +89,7 @@
       <ProgramDatabaseFile>.\Debug/dosbox.pdb</ProgramDatabaseFile>
       <SubSystem>Console</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
-      <AdditionalLibraryDirectories>../../../../Debug;../../../../$(Configuration);../../../../corelib/debug;../../../../runtime/debug;../../../../ThirdParty/SDL/SDL2/debug;../../../../ThirdParty/debug</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(YUZA_ROOT)/$(Configuration);$(YUZA_ROOT)/corelib/debug;$(YUZA_ROOT)/runtime/debug;$(YUZA_ROOT)/ThirdParty/SDL/SDL2/debug;$(YUZA_ROOT)/ThirdParty/debug</AdditionalLibraryDirectories>
       <IgnoreAllDefaultLibraries>true</IgnoreAllDefaultLibraries>
       <GenerateMapFile>true</GenerateMapFile>
       <MapFileName>$(OutDir)$(TargetName).map</MapFileName>
