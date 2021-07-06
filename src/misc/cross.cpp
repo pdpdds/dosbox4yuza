@@ -218,9 +218,9 @@ dir_information* open_directory(const char* dirname)
 	strncpy(dir.base_path, dirname, CROSS_LEN);
 
 	if (dir.dir == 0)
-		return &dir;
+		return NULL;
 
-	return  NULL;
+	return  &dir;
 }
 #include <stat_def.h>
 bool read_directory_first(dir_information* dirp, char* entry_name, bool& is_directory) 
